@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plant Manager</title>
+
+    <meta name="description"
+          content="App Plant Manager helps you out with managing your plants at home. Watering your plants was never easier!"/>
+    <meta name="keywords" content="plants, watering, home, green"/>
+
+    <link rel="stylesheet" th:href="@{/styles.css}"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Logo -->
+<div>
+    <img th:src="@{/logoPlantManager.png}" alt="logoPlantManager" class="center">
+</div>
+
+<div class="login-wrap">
+    <div class="login-html">
+        <div class="content" align="center">
+            <p>
+                Have you recently killed the plant <br>
+                because you actually forgot about it? <br>
+                It won't happen again with your Plant Manager! <br>
+                Your plants will be grateful for logging in <br>
+                (and we will send you notifications). <br>
+            </p>
+            <br>
+            <p>What would you like to do now?</p>
+        </div>
+
+        <!-- Buttons Sign in/Sign up -->
+        <div>
+            <a href="/sign-in">
+                <button type="button" class="buttonSave">Sign me in</button>
+            </a>
+        </div>
+
+        <br>
+
+        <div>
+            <a href="/sign-up">
+                <button class="buttonSave">I'm new here, sign me up</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
